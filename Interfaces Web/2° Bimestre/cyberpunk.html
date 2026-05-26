@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Cyberpunk Edgerunners</title>
+
+    <style>
+        /* ===== ESTILO GERAL ===== */
+        body {
+            background: linear-gradient(135deg, #0f0f0f, #1a0033);
+            color: #00fff7;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background: black;
+            border-bottom: 2px solid #ff00ff;
+        }
+
+        h1 {
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+
+        h2 {
+            color: #00fff7;
+            border-left: 5px solid #ff00ff;
+            padding-left: 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00fff7;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        code {
+            background: #111;
+            color: #39ff14;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* ===== SELETORES ===== */
+        .neon {
+            color: #39ff14;
+            text-shadow: 0 0 5px #39ff14;
+        }
+
+        #destaque {
+            color: #ff003c;
+            font-weight: bold;
+        }
+
+        div p {
+            color: #cccccc;
+        }
+
+        a:hover {
+            color: #ff00ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: black;
+            border-top: 2px solid #ff00ff;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>CSS</h1>
+    <p class="neon">Explicando como funciona</p>
+</header>
+
+<section>
+    <h2>O que é CSS?</h2>
+    <p>
+        CSS (Cascading Style Sheets) é uma linguagem usada para estilizar páginas HTML.
+        Ele controla cores, fontes, espaçamentos e layouts.
+    </p>
+    <p id="destaque">
+        Sem CSS, os sites seriam apenas estruturas simples e sem estilo.
+    </p>
+</section>
+
+<section>
+    <h2>Seletores CSS</h2>
+    <p>Os seletores definem quais elementos serão estilizados.</p>
+
+    <ul>
+        <li><code>*</code> → Seleciona todos os elementos</li>
+        <li><code>p</code> → Seleciona todas as tags &lt;p&gt;</li>
+        <li><code>.classe</code> → Seleciona elementos com classe</li>
+        <li><code>#id</code> → Seleciona elemento com ID específico</li>
+        <li><code>div p</code> → Seleciona parágrafos dentro de div</li>
+        <li><code>a:hover</code> → Quando o mouse passa sobre o link</li>
+    </ul>
+
+    <p class="neon">Exemplo:</p>
+    <code>
+        p { color: red; }<br>
+        .classe { font-size: 20px; }<br>
+        #id { background: black; }
+    </code>
+</section>
+
+<section>
+    <h2>Propriedades e Valores</h2>
+    <p>
+        No CSS, cada estilo é formado por uma propriedade e um valor.
+    </p>
+
+    <p class="neon">Estrutura:</p>
+    <code>
+        propriedade: valor;
+    </code>
+
+    <p>Exemplos:</p>
+    <ul>
+        <li><code>color: blue;</code> → muda a cor do texto</li>
+        <li><code>font-size: 18px;</code> → muda o tamanho da fonte</li>
+        <li><code>background: black;</code> → muda o fundo</li>
+        <li><code>margin: 10px;</code> → espaço externo</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Exemplo Visual</h2>
+    <div>
+        <p>Este texto está dentro de uma DIV.</p>
+    </div>
+
+    <p class="neon">Este texto usa classe neon.</p>
+    <p id="destaque">Este texto usa ID destaque.</p>
+
+    <a href="#">Passe o mouse aqui</a>
+</section>
+
+<footer>
+    <p>Autores: Ian Correa, Julya Souza 1° Ano D    </p>
+</footer>
+
+</body>
+</html>
